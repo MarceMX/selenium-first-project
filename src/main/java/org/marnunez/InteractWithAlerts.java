@@ -32,19 +32,23 @@ public class InteractWithAlerts {
 		try {
 			driver.get("https://demoqa.com/");
 			log.debug("{}Go to Alerts section",logID);
-			driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[3]/div/div[3]/h5")).click();
+//			driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[3]/div/div[3]/h5")).click();
+			driver.findElement(By.xpath("//h5[contains(text(),'Alerts, Frame & Windows')]")).click();
 			waitSec();
-			driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[3]/div/ul/li[2]/span")).click();
+//			driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[3]/div/ul/li[2]/span")).click();
+			driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[2]")).click();
 			waitSec();
 			log.debug("{}Click first Alert button",logID);
-			driver.findElement((By.xpath("//*[@id=\"alertButton\"]"))).click();
+//			driver.findElement((By.xpath("//*[@id=\"alertButton\"]"))).click();
+			driver.findElement(By.xpath("//button[@id='alertButton']")).click();
 			waitSec();
 			log.debug("{}Close alert",logID);
 			System.out.println("Alert 1: " + driver.switchTo().alert().getText());
 			driver.switchTo().alert().accept();
 			
 			log.debug("{}Click second Alert button",logID);
-			driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/button")).click();
+//			driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/button")).click();
+			driver.findElement(By.xpath("//button[@id='timerAlertButton']")).click();
 			waitSec();
 			waitSec();
 			System.out.println("Alert 2: " + driver.switchTo().alert().getText());
