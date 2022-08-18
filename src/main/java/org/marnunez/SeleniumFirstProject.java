@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class SeleniumFirstProject {
 	
-	//region Mis Metodos
+	//region My Methods
 	
 	
 	/**
@@ -30,8 +30,9 @@ public class SeleniumFirstProject {
 		try {
 //			new InteractionsWithButtons().execute();
 //			new InteractionsWithButtonsUsingActions().execute();
+//			new InteractionsWithSelect().dropDownSelect();
+//			new InteractWithAlerts().clickAlerts();
 			
-			new InteractionsWithSelect().execute();
 			
 			log.trace("{}Finish", logID);
 			

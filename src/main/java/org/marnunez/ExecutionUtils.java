@@ -13,7 +13,7 @@ public class ExecutionUtils {
 	/**
 	 * Will allow user to see the action performed in screen for a period of time prior to continue.
 	 */
-	public static void waiter() {
+	public static void waitSec() {
 		try {
 			Thread.sleep(5000);
 		} catch (Exception e) {

@@ -20,13 +20,13 @@ public class InteractionsWithButtons {
         buttonElements.click();
 
 
-        waiter();
+        waitSec();
         //Llegamos a la pagina de "Elements"
 
         WebElement buttonRadioButton = driver.findElement(By.xpath("(//*[@id='item-2'])[1]"));
         buttonRadioButton.click();
 
-        waiter();
+        waitSec();
 
         //Comenzamos con la interacción con el radiobutton YES
         ////*[@id="app"]/div/div/div[2]/div[2]/div[2]/div[2]/label
@@ -38,7 +38,7 @@ public class InteractionsWithButtons {
             System.out.println("El radio YES esta seleccionad, lo cual esta MAL");
         }
         
-        waiter();
+        waitSec();
 
         // Ejecucion de lo que estamos realizando, instrucciones, y etc.
         driver.close();
