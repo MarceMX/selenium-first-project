@@ -1,14 +1,15 @@
-package com.xmartlabs;
+package org.marnunez;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import static org.marnunez.ExecutionUtils.*;
 
 public class InteractionsWithButtons {
 
-    public static void main(String[] args) {
+    public void execute() {
 //        System.setProperty("webdriver.chrome.driver", "chromedriver");
         WebDriverManager.chromedriver().setup();
 
@@ -19,13 +20,13 @@ public class InteractionsWithButtons {
         buttonElements.click();
 
 
-        waiter(2000);
+        waiter();
         //Llegamos a la pagina de "Elements"
 
         WebElement buttonRadioButton = driver.findElement(By.xpath("(//*[@id='item-2'])[1]"));
         buttonRadioButton.click();
 
-        waiter(5000);
+        waiter();
 
         //Comenzamos con la interacción con el radiobutton YES
         ////*[@id="app"]/div/div/div[2]/div[2]/div[2]/div[2]/label
@@ -37,7 +38,7 @@ public class InteractionsWithButtons {
             System.out.println("El radio YES esta seleccionad, lo cual esta MAL");
         }
         
-        waiter(5000);
+        waiter();
 
         // Ejecucion de lo que estamos realizando, instrucciones, y etc.
         driver.close();
@@ -46,11 +47,4 @@ public class InteractionsWithButtons {
 
     }
 
-    public static void waiter(int pSeconds) {
-        try {
-            Thread.sleep(pSeconds);
-        } catch (Exception e) {
-            System.out.println("Algo ocurrió");
-        }
-    }
 }

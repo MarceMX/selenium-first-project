@@ -1,4 +1,4 @@
-package com.xmartlabs;
+package org.marnunez;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

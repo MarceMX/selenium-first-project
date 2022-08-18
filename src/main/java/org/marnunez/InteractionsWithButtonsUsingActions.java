@@ -1,4 +1,4 @@
-package com.xmartlabs;
+package org.marnunez;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class InteractionsWithButtonsUsingActions {
 
-    public static void main(String[] args) {
+    public void execute() {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         WebDriver driver = new ChromeDriver();
 
