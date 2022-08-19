@@ -33,7 +33,8 @@ public class SeleniumFirstProject {
 //			new InteractionsWithSelect().dropDownSelect();
 //			new InteractWithAlerts().clickAlerts();
 //			new InteractionsWithDragDrop().dragAndDrop();
-			new InteractWithKeys().filloutForm();
+//			new InteractWithKeys().filloutForm();
+			new ReadPropertiesFile().readFile();
 			
 			log.trace("{}Finish", logID);
 			
