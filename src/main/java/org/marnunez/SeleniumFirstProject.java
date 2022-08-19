@@ -31,8 +31,9 @@ public class SeleniumFirstProject {
 //			new InteractionsWithButtons().execute();
 //			new InteractionsWithButtonsUsingActions().execute();
 //			new InteractionsWithSelect().dropDownSelect();
-			new InteractWithAlerts().clickAlerts();
-			
+//			new InteractWithAlerts().clickAlerts();
+//			new InteractionsWithDragDrop().dragAndDrop();
+			new InteractWithKeys().filloutForm();
 			
 			log.trace("{}Finish", logID);
 			
