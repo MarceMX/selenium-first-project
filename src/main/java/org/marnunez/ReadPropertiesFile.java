@@ -3,7 +3,9 @@ package org.marnunez;
 import com.sun.tools.javac.Main;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -37,6 +39,13 @@ public class ReadPropertiesFile {
 			System.out.println(p.getProperty("course"));
 			System.out.println(p.getProperty("time"));
 			System.out.println(p.getProperty("topic"));
+			
+			String fileTxt = "src/main/resources/myTest.txt";
+			BufferedReader bF = new BufferedReader(new FileReader(fileTxt));
+			String startLine;
+			while ((startLine = bF.readLine()) != null){
+				System.out.println(startLine);
+			}
 			
 			log.trace("{} Finish.", logID);
 		} catch (Exception e) {
