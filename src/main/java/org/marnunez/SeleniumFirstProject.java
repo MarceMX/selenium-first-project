@@ -34,7 +34,9 @@ public class SeleniumFirstProject {
 //			new InteractWithAlerts().clickAlerts();
 //			new InteractionsWithDragDrop().dragAndDrop();
 //			new InteractWithKeys().filloutForm();
-			new ReadPropertiesFile().readFile();
+//			new ReadPropertiesFile().readFile();
+			new RobotInteractions().downloadFile();
+			
 			
 			log.trace("{}Finish", logID);
 			

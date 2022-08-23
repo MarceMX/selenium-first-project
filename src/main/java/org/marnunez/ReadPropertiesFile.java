@@ -1,12 +1,11 @@
 package org.marnunez;
 
 import com.sun.tools.javac.Main;
+import jxl.Sheet;
+import jxl.Workbook;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.InputStream;
+import java.io.*;
 import java.util.Properties;
 
 /**
@@ -47,6 +46,16 @@ public class ReadPropertiesFile {
 				System.out.println(startLine);
 			}
 			
+			/* EXCEL PART IS NOT FINDING THE FILE, NEED TO CHECK, LET'S ASSUME YOU DO NOT NEED THIS
+			Workbook wb = Workbook.getWorkbook(new File("C:\\Users\\HP\\Documents\\GitHub\\selenium-first-project\\src\\main\\resources\\myTest.xls"));
+			Sheet sht = wb.getSheet("abc");
+			
+			for (int i = 0; i < sht.getRows(); i++) {
+				System.out.println(sht.getCell(0,i).getContents());
+				System.out.println(sht.getCell(1,i).getContents());
+				
+				
+			}*/
 			log.trace("{} Finish.", logID);
 		} catch (Exception e) {
 			throw new RuntimeException("Impossible instantiate class ReadPropertiesFile due to an internal error.", e);

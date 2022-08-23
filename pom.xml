@@ -90,6 +90,13 @@
         </dependency>
 
         <!-- endregion -->
+        <!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
+        <dependency>
+            <groupId>net.sourceforge.jexcelapi</groupId>
+            <artifactId>jxl</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
     </dependencies>
 
 
