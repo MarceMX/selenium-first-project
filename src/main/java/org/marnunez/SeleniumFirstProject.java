@@ -35,8 +35,9 @@ public class SeleniumFirstProject {
 //			new InteractionsWithDragDrop().dragAndDrop();
 //			new InteractWithKeys().filloutForm();
 //			new ReadPropertiesFile().readFile();
-			new RobotInteractions().downloadFile();
-			
+//			new RobotInteractions().downloadFile();
+//			new RobotInteractions().uploadFile();
+			new WorkingWithTestNG().firstTest();
 			
 			log.trace("{}Finish", logID);
 			

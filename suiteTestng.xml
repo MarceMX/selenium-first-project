@@ -1,0 +1,8 @@
+<suite name = "Suite name">
+    <test name = "Test name">
+        <classes>
+            <class name = "org.marnunezt.FirstTest"></class>
+            <class name = "org.marnunezt.SecondTest"></class>
+        </classes>
+    </test>
+</suite>
