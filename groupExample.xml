@@ -4,8 +4,7 @@
     <test name="GroupingTest">
         <groups>
             <run>
-                <include name="regression"/>
-                <include name="functional"/>
+                <include name="smoke"/>
             </run>
         </groups>
         <classes>
