@@ -46,6 +46,9 @@ public class Parameter {
 					break;
 			}
 			driver.get(url);
+			System.out.println("Page title:" + driver.getTitle());
+			driver.close();
+			driver.quit();
 			log.trace("{} Finish.", logID);
 		} catch (Exception e) {
 			throw new RuntimeException("Impossible instantiate class Parameter due to an internal error.", e);

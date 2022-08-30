@@ -2,12 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/HP/Documents/GitHub/selenium-first-project/src/test/java/org/marnunezt/Parameter.java">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.facebook.com"/>
+
         <classes>
-            <class name="org.marnunezt.Parameter">
-                <methods>
-                    <include name="Launch"/>
-                </methods>
-            </class>
+            <class name="org.marnunezt.Parameter"/>
         </classes>
     </test>
 </suite>
