@@ -1,4 +1,4 @@
-package org.marnnez.pomodel;
+package org.marnunez.pomodel;
 
 import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.By;

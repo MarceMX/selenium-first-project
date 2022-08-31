@@ -102,6 +102,18 @@
             <artifactId>testng</artifactId>
             <version>RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-api -->
+        <dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-api</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi -->
+        <dependency>
+            <groupId>com.sikulix</groupId>
+            <artifactId>sikulixapi</artifactId>
+            <version>RELEASE</version>
+        </dependency>
 
     </dependencies>
 
